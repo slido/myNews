@@ -46,9 +46,8 @@
       span {
         font-size: 10px;
         text-transform: uppercase;
-        font-weight: 800;
         letter-spacing: -0.02px;
-        font-family: 'Inter';
+        font-family: "InterExtraBold";
         margin-top: 12px;
         margin-left: 12px;
         color: #1e71bb;
@@ -57,7 +56,7 @@
 
       h2 {
         font-size: 16px;
-        font-weight: 600;
+        font-family: "InterSemiBold";
         line-height: 116%;
         letter-spacing: -0.11px;
         margin-top: 6px;
@@ -74,6 +73,7 @@
         left: 12px;
         height: 13px;
         overflow: hidden;
+        font-family: "Inter";
       }
     }
 

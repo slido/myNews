@@ -37,6 +37,8 @@ header {
       line-height: 50px;
       background: #fff;
       color: #bb1e1e;
+      font-family: "InterMedium";
+      font-size: 15px;
       outline: none;
       border-radius: 8px 0 0 8px;
       background: url('./assets/pngs/Search.png') no-repeat;
@@ -47,7 +49,7 @@ header {
 
     button {
       background: #bb1e1e;
-      font-weight: bold;
+      font-family: "InterBold";
       width: 95px;
       height: 40px;
       border-radius: 6px;

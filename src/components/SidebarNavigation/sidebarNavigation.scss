@@ -1,51 +1,54 @@
 .sidebarNavigation {
-    width:63px;
+  width: 63px;
 
-    ul {
-      display:flex;
-      flex-direction:column;
-      color:#000;
-      margin-top:24px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: 24px;
+  }
+
+  ul li a {
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    display: flex;
+    width: 63px;
+    flex-direction: column;
+    color: #888989;
+    border-radius: 5px;
+    font-family: "InterSemiBold";
+
+    span {
+      font-size: 10px;
+      margin-top: 5px;
     }
 
-    ul li a {
-      align-items:center;
-      justify-content: center;
-      height: 63px;
-      display: flex;
-      width: 63px;
-      flex-direction:column;
-      color:#888989;
-      border-radius:5px;
-
-      span {
-        font-size:10px;
-        margin-top:5px;
-      }
-
-      &:hover {
-        background:white;
-        color:#bb1e1e;
-        text-decoration:none;
-      }
-
-      path{
-        fill:#888989;
-      }
-
-      &:hover path{
-        fill:#bb1e1e;
-      }
-
-      
-
+    &:hover {
+      background: white;
+      color: #bb1e1e;
+      text-decoration: none;
     }
-    .isActive a{
-      background:white;
-      color:#bb1e1e;
-      text-decoration:none;
-      path{
-        fill:#bb1e1e;
-      }
+
+    path {
+      fill: #888989;
+    }
+
+    &:hover path {
+      fill: #bb1e1e;
+    }
+
+
+
+  }
+
+  .isActive a {
+    background: white;
+    color: #bb1e1e;
+    text-decoration: none;
+
+    path {
+      fill: #bb1e1e;
     }
   }
+}

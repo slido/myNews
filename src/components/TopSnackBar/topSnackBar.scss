@@ -1,67 +1,65 @@
 //top snackbar
 
 .snackbarContainer {
-    width:100%;
-    height:60px;
-    background:#bb1e1e;
+  width: 100%;
+  height: 60px;
+  background: #bb1e1e;
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+  letter-spacing: -0.136px;
+  line-height: 59px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+
+  .inner {
+    width: 1095px;
+    background: url('./assets/pngs/bannerBg.png') no-repeat;
     display: flex;
-    justify-content: center;
-    font-family: Inter;
-    letter-spacing: -0.136px;
-    line-height: 59px;
-    position: relative;
-    top: 0;
-    transition: top 0.3s ease-in-out;
-  
-    .inner {
-      width:1095px;
-      background: url('./assets/pngs/bannerBg.png') no-repeat;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .mmyh {
-      font-weight: bold;
-      font-size:16px;
-      text-align: center;
-    }
-  
-    .edd {
-      font-size:14px;
-      margin-left:-240px;
-    }
-  
-    .rHolder {
-      width:auto;
-  
-      .getBtn {
-        background:#fff;
-        color:#000;
-        height:40px;
-        margin-top:10px;
-        width:69px;
-        font-weight:bold;
-        border-radius:4px;
-        margin-right:20px;
-        font-size:14px;
-        border:none;
-        cursor:pointer;
-      } 
-  
-      .nt {
-        margin-right: 40px;
-        font-weight: bold;
-        font-size: 14px;
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-    }
-  
-
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  
+  .mmyh {
+    font-family: "InterMedium";
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .edd {
+    font-size: 14px;
+    margin-left: -240px;
+  }
+
+  .rHolder {
+    width: auto;
+
+    .getBtn {
+      background: #fff;
+      color: #000;
+      height: 40px;
+      margin-top: 10px;
+      width: 69px;
+      font-family: "InterBold";
+      border-radius: 4px;
+      margin-right: 20px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nt {
+      margin-right: 40px;
+      font-family: "InterBold";
+      font-size: 14px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+
+
+}
