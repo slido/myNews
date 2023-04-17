@@ -1,0 +1,67 @@
+@media (max-width: 767px) {
+
+    .snackbarContainer,
+    .sidebarNavigation {
+        display: none;
+    }
+
+    .mainHolder {
+        .inner {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .sectionToggleBtns {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            border: none !important;
+
+            .inputHolder {
+                margin-top: 76px;
+                width: 91%;
+
+                button {
+                    display: none;
+                }
+            }
+
+            .logo {
+                left: 15px;
+                top: -23px;
+                font-size: 24px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        .contentHolder h1 {
+            display: none;
+        }
+
+        .newsWrapper {
+            display: flex;
+            grid-gap: unset;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            .newsItem {
+                display: block;
+                border-radius: 6px;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+                margin: 18px;
+                overflow: hidden;
+                width: 91%;
+                height: 260px;
+                margin: 18px 18px 0 18px;
+            }
+        }
+    }
+}
