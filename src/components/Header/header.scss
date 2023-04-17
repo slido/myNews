@@ -1,61 +1,62 @@
 header {
-    width:100%;
-    border-bottom:1px solid #d8d8d8  !important;
-    height:113px;
-    display:flex !important;
-    align-items:center;
-    flex-direction:row;
-    justify-content:center;
-    position:relative;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8 !important;
+  height: 113px;
+  display: flex !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
 
-    .logo {
-      position:absolute;
-      font-size:32px;
-      font-weight:900;
-      line-height:113px;
-      left:0;
+  .logo {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 113px;
+    left: 0;
 
-      a{
-        color:#bb1e1e;
-        text-decoration:none;
-      }
-
-      .clr {
-        color:#1d1d1b;
-      }
+    a {
+      font-family: "InterBlack";
+      color: #bb1e1e;
+      text-decoration: none;
     }
 
-    .inputHolder {
-      width:725px;
-      background:#fff;
-      border-radius:8px;
-      position:relative;
-
-        input {
-          width:630px;
-          line-height:50px;
-          background:#fff;
-          color:#bb1e1e;
-          outline:none;
-          border-radius:8px 0 0 8px;
-          background:url('./assets/pngs/Search.png') no-repeat;
-          background-position:15px;
-          padding-left:50px;
-          border:none;
-        }
-
-        button {
-          background:#bb1e1e;
-          font-weight:bold;
-          width:95px;
-          height:40px;
-          border-radius:6px;
-          text-transform:uppercase;
-          position:absolute;
-          top:5px;
-          right:5px;
-          border:none;
-          cursor:pointer;
-        }
+    .clr {
+      color: #1d1d1b;
     }
   }
+
+  .inputHolder {
+    width: 725px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+
+    input {
+      width: 630px;
+      line-height: 50px;
+      background: #fff;
+      color: #bb1e1e;
+      outline: none;
+      border-radius: 8px 0 0 8px;
+      background: url('./assets/pngs/Search.png') no-repeat;
+      background-position: 15px;
+      padding-left: 50px;
+      border: none;
+    }
+
+    button {
+      background: #bb1e1e;
+      font-weight: bold;
+      width: 95px;
+      height: 40px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

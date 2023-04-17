@@ -143,6 +143,9 @@ table {
   border-spacing: 0;
 }
 
+
+@import "./styles/typography.scss";
+
 :root {
   font-family: Inter, sans-serif;
   line-height: 1.5;
@@ -203,5 +206,4 @@ body.animate {
   }
 }
 
-@import "./styles/typography.scss";
 @import "./styles/responsive.scss";
