@@ -5,6 +5,12 @@
         display: none;
     }
 
+    .apiError {
+        position: relative;
+        left: 20px;
+        top: 2px;
+    }
+
     .mainHolder {
         .inner {
             width: 100%;

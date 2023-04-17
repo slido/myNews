@@ -1,4 +1,4 @@
-import { createElement, FC, useState } from "react";
+import { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { nav } from "../../data/navData";
 
@@ -6,7 +6,6 @@ import "./sidebarNavigation.scss";
 
 const Sidebar: FC = () => {
   const location = useLocation();
-  const [iconComp, setIconComp] = useState("");
 
   return (
     <ul>

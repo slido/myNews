@@ -1,14 +1,8 @@
 import { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { nav } from "../../data/navData";
 import { IMenuProps } from "../../interfaces/interfaces";
 import Search from "../Search/Search";
-import { BusinessIcon } from "../svgs/businessIcon";
-import { GeneralIcon } from "../svgs/generalIcon";
-import { HealthIcon } from "../svgs/healthIcon";
-import { HomeIcon } from "../svgs/homeIcon";
-import { ScienceIcon } from "../svgs/scienceIcon";
-import { SportsIcon } from "../svgs/sportsIcon";
-import { TechnologyIcon } from "../svgs/technologyIcon";
 import "./mobileMenu.scss";
 
 const MobileMenu: FC<IMenuProps> = ({
@@ -29,6 +23,26 @@ const MobileMenu: FC<IMenuProps> = ({
         <Search />
       </div>
       <div className="hambNavigation">
+        <ul>
+          {nav.map((navItem, index) => {
+            const isActive =
+              location.pathname === navItem.path ? "isActive" : "";
+            const Icon = navItem.icon;
+            return (
+              <li
+                key={index}
+                className={isActive}
+                onClick={() => setIsMobMenuActive(false)}
+              >
+                <Link to={navItem.path}>
+                  <Icon />
+                  <span>{navItem.label}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        {/*         
         <ul>
           <li
             onClick={() => setIsMobMenuActive(false)}
@@ -106,7 +120,7 @@ const MobileMenu: FC<IMenuProps> = ({
               <span>Favorites</span>
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
